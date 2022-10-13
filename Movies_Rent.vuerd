@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1.6666666004392863,
-    "scrollLeft": -1.6666666004392865,
+    "scrollTop": 0,
+    "scrollLeft": -0.8333333002196431,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 15,
-          "top": 28.3334,
-          "zIndex": 67,
+          "left": 633.3333,
+          "top": 337.5003,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -159,7 +159,7 @@
           "active": false,
           "left": 633.3325,
           "top": 32.5005,
-          "zIndex": 95,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -219,9 +219,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 630.8334,
-          "top": 298.3329,
-          "zIndex": 96,
+          "left": 86.6669,
+          "top": 31.6664,
+          "zIndex": 4,
           "widthName": 102.140625,
           "widthComment": 60
         },
@@ -283,7 +283,7 @@
           "active": false,
           "left": 66.6675,
           "top": 546.6664,
-          "zIndex": 104,
+          "zIndex": 3,
           "widthName": 71.5703125,
           "widthComment": 60
         },
@@ -345,7 +345,7 @@
           "active": false,
           "left": 65.8338,
           "top": 295.8334,
-          "zIndex": 103,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -369,18 +369,18 @@
           "columnIds": [
             "0a4ce779-c6e6-489e-9042-4cfc93a0fdfd"
           ],
-          "x": 395.0380859375,
-          "y": 83.3334,
-          "direction": "right"
+          "x": 823.35234296875,
+          "y": 337.5003,
+          "direction": "top"
         },
         "end": {
           "tableId": "7a3787d5-cbc5-46da-ba87-7e2cc644e6dd",
           "columnIds": [
             "5c4cb314-a4fe-44a1-b36d-06158b7367a8"
           ],
-          "x": 633.3325,
-          "y": 87.5005,
-          "direction": "left"
+          "x": 823.35154296875,
+          "y": 142.5005,
+          "direction": "bottom"
         },
         "constraintName": "fk_사용자들_to_대여자",
         "visible": true,
@@ -395,18 +395,18 @@
           "columnIds": [
             "3c387c6b-1d4c-4c91-85dd-1099ad5a0018"
           ],
-          "x": 825.4037125,
-          "y": 298.3329,
-          "direction": "top"
+          "x": 475.807525,
+          "y": 86.6664,
+          "direction": "right"
         },
         "end": {
           "tableId": "7a3787d5-cbc5-46da-ba87-7e2cc644e6dd",
           "columnIds": [
             "756e2d17-ec98-4af1-b863-934e393876b2"
           ],
-          "x": 823.35154296875,
-          "y": 142.5005,
-          "direction": "bottom"
+          "x": 633.3325,
+          "y": 87.5005,
+          "direction": "left"
         },
         "constraintName": "fk_영화 이름과 장르_to_대여자",
         "visible": true,
@@ -421,18 +421,18 @@
           "columnIds": [
             "3c387c6b-1d4c-4c91-85dd-1099ad5a0018"
           ],
-          "x": 630.8334,
-          "y": 353.3329,
-          "direction": "left"
+          "x": 281.2372125,
+          "y": 141.6664,
+          "direction": "bottom"
         },
         "end": {
           "tableId": "87e12e8c-1bb0-4e44-be05-37d96cd05abb",
           "columnIds": [
             "a57945b8-23ae-4c3a-a9d0-205402edc011"
           ],
-          "x": 463.4041125,
-          "y": 350.8334,
-          "direction": "right"
+          "x": 264.61895625,
+          "y": 295.8334,
+          "direction": "top"
         },
         "constraintName": "fk_영화 이름과 장르_to_포스터",
         "visible": true,
