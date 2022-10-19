@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -64.99999741713208,
-    "scrollLeft": -361.66665229532504,
-    "zoomLevel": 0.9,
+    "scrollTop": -248.33332346545356,
+    "scrollLeft": -565.8333108491385,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -120,7 +120,7 @@
           "active": false,
           "left": 570.6251,
           "top": 0,
-          "zIndex": 149,
+          "zIndex": 1,
           "widthName": 99.322265625,
           "widthComment": 60
         },
@@ -131,6 +131,29 @@
         "name": "CLASSIFICATION",
         "comment": "대분류",
         "columns": [
+          {
+            "name": "CLASS_BG",
+            "comment": "중분류",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.81396484375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "dc931b3d-c508-4c8e-9d42-930a48242d45"
+          },
           {
             "name": "CLASS_CC",
             "comment": "대분류",
@@ -182,7 +205,7 @@
           "active": false,
           "left": 0,
           "top": 20.0002,
-          "zIndex": 8,
+          "zIndex": 5,
           "widthName": 99.322265625,
           "widthComment": 60
         },
@@ -193,29 +216,6 @@
         "name": "BIOTORE GROUP",
         "comment": "중분류",
         "columns": [
-          {
-            "name": "CLASS_BG",
-            "comment": "중분류",
-            "dataType": "VARCHAR(200)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 61.81396484375,
-              "widthComment": 60,
-              "widthDataType": 89.29296875,
-              "widthDefault": 60
-            },
-            "id": "dc931b3d-c508-4c8e-9d42-930a48242d45"
-          },
           {
             "name": "CLASS_UID_BG",
             "comment": "중분류 대표값",
@@ -244,7 +244,7 @@
           "active": false,
           "left": 0.9956,
           "top": 161.3656,
-          "zIndex": 136,
+          "zIndex": 4,
           "widthName": 101.62646484375,
           "widthComment": 60
         },
@@ -421,7 +421,7 @@
           "active": false,
           "left": 568.7504,
           "top": 235.602,
-          "zIndex": 214,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -432,6 +432,29 @@
         "name": "COMMENTS",
         "comment": "댓글",
         "columns": [
+          {
+            "name": "COMMENTS_UID",
+            "comment": "댓글 UID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 102.13427734375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "4c421e82-cc1d-4631-a0d1-a01a95a27857"
+          },
           {
             "name": "POST_UID",
             "comment": "게시물 UID",
@@ -502,7 +525,7 @@
             "id": "1f37c36a-0bbf-41e7-8987-8a6d24a81e8a"
           },
           {
-            "name": "C_CONTEXT",
+            "name": "C_COMMENTS",
             "comment": "댓글내용",
             "dataType": "VARCHAR(200)",
             "default": "",
@@ -517,7 +540,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 72.55419921875,
+              "widthName": 88.4169921875,
               "widthComment": 60,
               "widthDataType": 89.29296875,
               "widthDefault": 60
@@ -527,9 +550,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 57.1527,
-          "top": 616.3891,
-          "zIndex": 184,
+          "left": 958.1944,
+          "top": 636.1808,
+          "zIndex": 6,
           "widthName": 74.6298828125,
           "widthComment": 60
         },
@@ -591,7 +614,7 @@
           "active": false,
           "left": 1172.7783,
           "top": 223.3336,
-          "zIndex": 215,
+          "zIndex": 3,
           "widthName": 61.68701171875,
           "widthComment": 60
         },
@@ -616,7 +639,7 @@
             "68c097a8-436f-4fa0-9d5d-7423d77408c6"
           ],
           "x": 429.60400390625,
-          "y": 75.0002,
+          "y": 85.2502,
           "direction": "right"
         },
         "end": {
@@ -642,7 +665,7 @@
             "de10a85d-ddae-44f2-a567-b0b2c6bbc228"
           ],
           "x": 431.177240625,
-          "y": 216.3656,
+          "y": 206.1156,
           "direction": "right"
         },
         "end": {
@@ -693,18 +716,18 @@
           "columnIds": [
             "0039c797-5875-4a1e-8088-d372baff18ce"
           ],
-          "x": 568.7504,
-          "y": 341.852,
-          "direction": "left"
+          "x": 801.07510703125,
+          "y": 448.102,
+          "direction": "bottom"
         },
         "end": {
           "tableId": "12675a91-eb28-4a66-b4be-f09556425522",
           "columnIds": [
             "7482e67f-591f-4217-a0f9-da9e0fb3ed7d"
           ],
-          "x": 453.53941875,
-          "y": 691.8891,
-          "direction": "right"
+          "x": 958.1944,
+          "y": 721.9308,
+          "direction": "left"
         },
         "constraintName": "fk_posts_to_comments",
         "visible": true,

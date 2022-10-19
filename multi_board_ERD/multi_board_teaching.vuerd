@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -122.49999513228762,
+    "scrollTop": -55.83333111471615,
     "scrollLeft": 0,
     "zoomLevel": 0.9,
     "show": {
@@ -120,7 +120,7 @@
           "active": false,
           "left": 39.9999,
           "top": 61.6666,
-          "zIndex": 155,
+          "zIndex": 1,
           "widthName": 106.380859375,
           "widthComment": 60
         },
@@ -131,29 +131,6 @@
         "name": "WRITERS",
         "comment": "작성자들",
         "columns": [
-          {
-            "name": "WRITER_NAME",
-            "comment": "작성자이름",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 90.10546875,
-              "widthComment": 67,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "92713e30-62c5-4691-850d-a517e5ebc60f"
-          },
           {
             "name": "EMAIL",
             "comment": "작성자이메일",
@@ -176,6 +153,29 @@
               "widthDefault": 60
             },
             "id": "d2c00252-1c70-4f37-aa40-a5f13d5ad821"
+          },
+          {
+            "name": "WRITER_NAME",
+            "comment": "작성자이름",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 90.10546875,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "92713e30-62c5-4691-850d-a517e5ebc60f"
           },
           {
             "name": "WRITER_UID",
@@ -203,9 +203,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 644.1667,
-          "top": 574.9996,
-          "zIndex": 199,
+          "left": 645.0929,
+          "top": 282.4069,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -382,7 +382,7 @@
           "active": false,
           "left": 2.5,
           "top": 339.9999,
-          "zIndex": 184,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -511,9 +511,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 640.8337,
-          "top": 296.6669,
-          "zIndex": 202,
+          "left": 663.0556,
+          "top": 616.1112,
+          "zIndex": 3,
           "widthName": 74.6298828125,
           "widthComment": 60
         },
@@ -563,18 +563,18 @@
           "columnIds": [
             "49437ed9-142f-4fe0-bc3b-0f3e49ae443a"
           ],
-          "x": 857.36591875,
-          "y": 574.9996,
-          "direction": "top"
+          "x": 858.29211875,
+          "y": 412.9069,
+          "direction": "bottom"
         },
         "end": {
           "tableId": "968d6f81-3d7e-4094-b4e0-701af5c4aeb1",
           "columnIds": [
             "b4d45133-000e-4daf-93d1-dec67c73707d"
           ],
-          "x": 860.047323046875,
-          "y": 468.1669,
-          "direction": "bottom"
+          "x": 882.269223046875,
+          "y": 616.1112,
+          "direction": "top"
         },
         "constraintName": "fk_writers_to_댓글들",
         "visible": true,
@@ -589,8 +589,8 @@
           "columnIds": [
             "49437ed9-142f-4fe0-bc3b-0f3e49ae443a"
           ],
-          "x": 644.1667,
-          "y": 640.2496,
+          "x": 645.0929,
+          "y": 347.6569,
           "direction": "left"
         },
         "end": {
@@ -599,7 +599,7 @@
             "afc59c96-ece4-4783-9a12-ce644305eb42"
           ],
           "x": 472.67822265625,
-          "y": 499.3749,
+          "y": 393.1249,
           "direction": "right"
         },
         "constraintName": "fk_writers_to_",
@@ -642,7 +642,7 @@
             "31f5d44f-8ddd-43d0-b50e-053910f03f76"
           ],
           "x": 472.67822265625,
-          "y": 393.1249,
+          "y": 499.3749,
           "direction": "right"
         },
         "end": {
@@ -650,8 +650,8 @@
           "columnIds": [
             "9c06b9e6-5045-4da9-a48a-b21d5da8f017"
           ],
-          "x": 640.8337,
-          "y": 382.4169,
+          "x": 663.0556,
+          "y": 701.8612,
           "direction": "left"
         },
         "constraintName": "fk_boards_to_댓글들",
