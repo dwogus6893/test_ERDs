@@ -1,0 +1,72 @@
+-- study_sqls를 default schema로 설정한다
+-- authnames 테이블을 만든다.
+-- users 테이블에 속성값을 넣는다.
+
+
+CREATE TABLE AUTHNAMES
+(
+  AUTH_NAME VARCHAR(200) NOT NULL COMMENT '접근권한명',
+  UNIQUE_ID VARCHAR(200) NOT NULL COMMENT '접근권한 대표값',
+  PRIMARY KEY (UNIQUE_ID)
+) COMMENT '권한';
+CREATE TABLE AUTHS
+(
+  UNIQUE_ID_USERS      VARCHAR(200) NOT NULL COMMENT '대표값',
+  UNIQUE_ID_AUTH_NAMES VARCHAR(200) NOT NULL COMMENT '접근권한 대표값'
+) COMMENT '권한들';
+CREATE TABLE USERS
+(
+  UNIQUE_ID VARCHAR(200) NOT NULL COMMENT '대표값',
+  NAME      VARCHAR(200) NOT NULL COMMENT '이름',
+  EMAIL     VARCHAR(200) NOT NULL COMMENT '이메일',
+  JOB       VARCHAR(200) NULL     COMMENT '직책',
+  PRIMARY KEY (UNIQUE_ID)
+) COMMENT '사용자들';
+
+-- 회원가입 
+INSERT INTO authnames (AUTH_NAME,UNIQUE_ID)
+VALUES ('GUEST','B1');
+INSERT INTO authnames (AUTH_NAME,UNIQUE_ID)
+VALUES ('ADMIN','B2');
+INSERT INTO authnames (AUTH_NAME,UNIQUE_ID)
+VALUES ('MANAGER','B3');
+
+INSERT INTO users (UNIQUE_ID, NAME,EMAIL,JOB)
+VALUES ('U1',	'Paul',	 'paul01@gmail.com',	 'IT Billing');
+INSERT INTO users (UNIQUE_ID, NAME,EMAIL,JOB)
+VALUES ('U2',	'Allen',	 'texas@imfblog.org',	'Engineering');
+INSERT INTO users (UNIQUE_ID, NAME,EMAIL,JOB)
+VALUES ('U3',	'Teddy',	 'norway@iotm.com',	'IT Billing');
+INSERT INTO users (UNIQUE_ID, NAME,EMAIL,JOB)
+VALUES ('U4',	'Paul',	'paul_p@naver.com'	,'Developer');
+
+INSERT INTO auths (UNIQUE_ID_USERS ,UNIQUE_ID_AUTH_NAMES)
+VALUES ('B1','U1');
+
+INSERT INTO auths (UNIQUE_ID_USERS ,UNIQUE_ID_AUTH_NAMES)
+VALUES ('B2','U2');
+
+INSERT INTO auths (UNIQUE_ID_USERS ,UNIQUE_ID_AUTH_NAMES)
+VALUES ('B3','U3');
+
+
+-- 회원 탈퇴
+DELETE FROM users
+WHERE UNIQUE_ID = 'U2';
+
+DELETE FROM users
+WHERE UNIQUE_ID = 'U4';
+
+
+
+
+
+SELECT *
+FROM authnames;
+
+SELECT *
+FROM users;
+
+
+
+			
